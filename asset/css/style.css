@@ -1,0 +1,422 @@
+@charset "utf-8";
+/* 
+Start Project
+Company Name: Eclick Softwares
+Date: 17/07/2024
+Time: 1:00PM
+Project name: Techiosoft
+Developer Name: Priyam Kundu
+Take reference from: Sudip Karmakar
+CSS Document 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+picture {
+  display: block;
+}
+abbr,
+address,
+article,
+aside,
+audio,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font: 400 14px "Open Sans", sans-serif;
+  line-height: 20px;
+  color: #000;
+  background-color: #fff;
+}
+.chexbox,
+div,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+input,
+label,
+li,
+ol,
+option,
+p,
+radiobutton,
+select,
+td,
+textarea,
+tr,
+ul {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #666666 #fff;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+  color: #444444;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+.chexbox {
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+.clr,
+.spacer {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+}
+.clearfix:after,
+.clearfix::before {
+  content: "";
+  margin: 0;
+  padding: 0;
+  display: block;
+  clear: both;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+      format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gotham_blackregular";
+  src: url("../fonts/gotham_black_regular-webfont.eot");
+  src: url("../fonts/gotham_black_regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/gotham_black_regular-webfont.woff2") format("woff2"),
+    url("../fonts/gotham_black_regular-webfont.woff") format("woff"),
+    url("../fonts/gotham_black_regular-webfont.ttf") format("truetype"),
+    url("../fonts/gotham_black_regular-webfont.svg#gotham_blackregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.login-section .login-wrap {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+}
+.login-wrap > .left-section {
+  min-height: 100vh;
+  background-color: #e7f0ff;
+}
+.login-wrap > .left-section figure {
+  width: 100%;
+}
+.login-wrap > .left-section figure img {
+  width: 100%;
+  height: auto;
+}
+.login-wrap .right-section .form-top h2 {
+  font: 300 45px "Open Sans";
+  color: #000;
+}
+.login-wrap .right-section .form-top p {
+  font: 400 20px "Open Sans";
+  color: #303030;
+  margin-top: 24px;
+}
+.login-wrap .right-section .form-bottom {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  gap: 100px;
+}
+.login-wrap .right-section .form-bottom .left-section {
+  position: relative;
+}
+.login-wrap .right-section .form-bottom .left-section::after {
+  position: absolute;
+  right: -65px;
+  top: 91px;
+  height: 38px;
+  width: 38px;
+  content: "OR";
+  background-color: #e9e9e9;
+  border-radius: 50%;
+  font: 700 14px "Open Sans", sans-serif;
+  line-height: normal;
+  line-height: 38px;
+  color: #393939;
+  text-align: center;
+  z-index: 1;
+}
+.login-wrap .right-section .form-bottom .left-section::before {
+  position: absolute;
+  right: -48px;
+  top: 10px;
+  height: 200px;
+  width: 1px;
+  content: "";
+  background-color: #e9e9e9;
+}
+.login-wrap .right-section .form-bottom .left-section label {
+  font: 400 16px "Open Sans";
+  color: #2c2c2c;
+  margin-bottom: 8px;
+}
+.login-wrap .right-section .form-bottom .left-section input {
+  border: none;
+  outline: none;
+  padding: 17px 0;
+  padding-left: 75px;
+  border: 1px solid #cfcfcf;
+  background-color: #ffffff;
+  color: #000;
+  width: 100%;
+}
+.login-wrap > .right-section {
+  max-width: 950px;
+  padding: 105px 0 30px 75px;
+}
+.login-wrap .right-section .form-bottom .input-section {
+  position: relative;
+}
+.login-wrap .right-section .form-bottom .input-section figure {
+  position: absolute;
+  left: 24px;
+  border-right: 1px solid #cfcfcf;
+  padding-right: 20px;
+  top: 0;
+  bottom: 0;
+  align-content: center;
+  line-height: 56px;
+}
+.login-wrap .right-section .form-bottom .input-section figure i {
+  font-size: 23px;
+}
+.login-wrap .right-section .input-section {
+  position: relative;
+}
+.login-wrap .right-section .input-section a {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  align-content: center;
+  font: 400 15px "Open Sans";
+  color: #5f5f5f;
+  text-decoration: none;
+}
+.login-wrap .right-section .form-bottom .left-section .form-grp {
+  margin-bottom: 16px;
+}
+.login-wrap .right-section .form-bottom .left-section a {
+  font: 400 14px "Open Sans";
+  color: #023c1a;
+}
+.login-wrap .right-section .form-bottom .left-section a span {
+  text-decoration: underline;
+}
+.login-wrap .right-section .form-bottom .left-section p {
+  font: 400 14px "Open Sans";
+  color: #787878;
+  margin-top: 19px;
+  margin-bottom: 38px;
+}
+.login-wrap .right-section .form-bottom .left-section button[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 16px 129px;
+  background-color: #00ae4d;
+  margin-bottom: 18px;
+  font: 700 18px "Open Sans";
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: none;
+  cursor: pointer;
+  width: 100%;
+}
+.login-wrap
+  .right-section
+  .form-bottom
+  .right-section
+  .btn-wrap
+  a:nth-of-type(1),
+.right-section .btn-wrap a:nth-of-type(2) {
+  border: none;
+  outline: none;
+  background-color: #1877f2;
+  padding: 10px 17px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  gap: 20px;
+}
+.login-wrap
+  .right-section
+  .form-bottom
+  .right-section
+  .btn-wrap
+  a:nth-of-type(2) {
+  background-color: #ffffff;
+  box-shadow: 0px 3.58px 23.27px 0.89px #0000002b;
+}
+.login-wrap
+  .right-section
+  .form-bottom
+  .right-section
+  .btn-wrap
+  a:nth-of-type(1) {
+  color: #ffffff;
+  font: 700 18px "Inter";
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.login-wrap
+  .right-section
+  .form-bottom
+  .right-section
+  .btn-wrap
+  a:nth-of-type(2) {
+  color: #5f5f5f;
+  font: 700 18px "Inter";
+}
+.login-wrap .right-section .form-bottom .right-section .btn-wrap a figure {
+  width: 45px;
+  height: 45px;
+}
+.login-wrap .right-section .form-bottom .right-section .btn-wrap a figure img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+.triangle {
+  clip-path: polygon(100% 49%, 0 0, 0 100%);
+  position: absolute;
+  content: "";
+  top: 105px;
+  background: #e7f0ff;
+  right: -39px;
+  z-index: 9;
+  width: 70px;
+  height: 117px;
+}
+.login-wrap > .left-section {
+  position: relative;
+}
